@@ -1,0 +1,71 @@
+<div class= "container">
+	<h1>New Order</h1>
+</div>
+
+
+
+<div class="container" >
+<form id="order_form">
+
+<div class="form-group" id="1">
+    <label for="pin"><h3>Enter Pincode </h3></label>
+    <input class="form-control" id="inputdefault" type="text" required>
+
+    <button type="button" class="btn btn-info" onclick="next('1')" >next</button>
+</div>
+
+
+<div id="2" style="display: none;">
+<form role="form">
+  <div class="radio">
+  <label><input type="radio" id="inst" name="Instant">Instant Order</label>
+</div>
+
+<div class="radio">
+  <label><input type="radio" id="subs" name="Subscription">Subscription Order</label>
+</div>
+</form>
+
+
+ <button type="button" class="btn btn-info" onclick="back('2')" >back</button>
+  <button type="button" class="btn btn-info" onclick="next('2')" >next</button>
+</div>  
+
+<div  id="3" style="display: none;">
+ <button type="button" class="btn btn-info" onclick="back('3')" >back</button>
+  <h2>Select Product : </h2>
+  <input type="button" class="btn btn-info" value="5L">
+  <input type="button" class="btn btn-info" value="20L">
+  <input type="button" class="btn btn-info" value="100L">
+  <input type="button" class="btn btn-info" value="1000L"><br>
+  <button type="button" class="btn btn-info" onclick="next('3')" >next</button>
+</div>
+
+
+<div  id="4" style="display: none;">
+ <button type="button" class="btn btn-info" onclick="back('4')" >back</button>
+  <h2>Select company : </h2>
+  <div id="comp">
+    <input type="button" class="btn btn-info" value="Bisleri">
+  <input type="button" class="btn btn-info" value="AquaFina">
+  <input type="button" class="btn btn-info" value="Loowater">
+  <input type="button" class="btn btn-info" value="Himalya">
+  </div>
+   <button type="button" class="btn btn-info" onclick="next('4')" >You are Close!!</button>
+</div>
+
+<div id="5" style="display: none;">
+ <button type="button" class="btn btn-info" onclick="back('5')" >back</button>
+  <h2>Select vendor : </h2>
+  <div id="comp"></div>
+</div>
+
+<div>
+  <input type="submit" class="btn btn-info" value="Proceed to cart" id="submit" style="display: none;" onclick="proceed()">
+</div>
+
+</form>
+</div>
+
+
+

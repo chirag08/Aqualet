@@ -1,0 +1,29 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+
+ body {
+  background: #D7D3C8;
+  padding-bottom: 70px;
+  padding-top: 80px;
+}
+
+a{
+  text-decoration:none;
+}
+
+#menu{
+	color:blue;
+}
+/* forms*/
+input, textarea, select, .uneditable-input {
+  border: 1px solid #bbb;
+  width: 100%;
+  margin-bottom: 15px;
+  
+}
+
+input {
+  height: auto !important;
+}

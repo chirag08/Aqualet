@@ -1,0 +1,14 @@
+<% provide(:title, @customer.name) %>
+
+<h1><center>Hello <%= @customer.name %> (<%= @customer.email %>)</center></h1>
+ 	
+
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+ 	<%= form_for @customer , :url =>  url_for(:controller => "orders", :action => "new") , method: "get"  do |f| %> 
+ 	
+      <%= f.submit "New Order" , class: "btn btn-primary" %>
+    <% end %>
+
+  </div>
+</div>
